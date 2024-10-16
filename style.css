@@ -14,7 +14,7 @@ h1 {
 
 .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 20px;
 }
 
@@ -28,12 +28,15 @@ h1 {
 
 .left-column {
     width: 45%;
+    overflow-y: auto;
+    max-height: 80vh;
 }
 
 .right-column {
     width: 45%;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: flex-start;
 }
 
@@ -54,8 +57,9 @@ button:hover {
 
 #review-output {
     width: 100%;
-    height: 150px;
+    height: 300px; /* Increased height for better visibility */
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    resize: none; /* Prevent users from resizing the textarea */
 }

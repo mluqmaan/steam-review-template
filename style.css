@@ -37,7 +37,7 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    gap: 20px; /* Adds space between items */
 }
 
 button {
@@ -48,7 +48,7 @@ button {
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
-    margin: 10px 0;
+    margin-bottom: 10px;
 }
 
 button:hover {
@@ -57,7 +57,7 @@ button:hover {
 
 #review-output {
     width: 100%;
-    height: 300px; /* Increased height for better visibility */
+    height: 300px; /* Increased height for better readability */
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;

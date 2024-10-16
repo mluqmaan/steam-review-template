@@ -4,12 +4,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const reviewOutput = document.getElementById("review-output");
     const copyButton = document.getElementById("copy-review");
 
-    // Sample data for categories
+    // Sample data for categories with new options
     const categories = [
-        { title: "Graphics", options: ["You forget what reality is", "Beautiful", "Good", "Decent", "Bad", "Don’t look too long at it", "MS-DOS"] },
-        { title: "Gameplay", options: ["Very good", "Good", "It's just gameplay", "Mehh", "Watch paint dry instead", "Just don't"] },
-        { title: "Audio", options: ["Eargasm", "Very good", "Good", "Not too bad", "Bad", "I'm now deaf"] },
-        { title: "Audience", options: ["Kids", "Teens", "Adults", "Grandma"] },
+        { title: "Graphics", options: ["Pixel perfect", "Looks great on a potato", "Average at best", "Visual overload", "Is this Minecraft?", "Impressive lighting effects"] },
+        { title: "Gameplay", options: ["Addictive like coffee", "One more level!", "Meh, it's okay", "Sleep-inducing", "Button mashing galore", "Confusing but fun"] },
+        { title: "Audio", options: ["Ear candy", "Good background noise", "Forgettable", "Volume stuck at 11", "Who needs sound anyway?", "Annoying jingles"] },
+        { title: "Story", options: ["Oscar-worthy", "Intriguing plot twists", "Pretty generic", "Did they even try?", "I have no idea what's going on", "Emotional rollercoaster"] },
+        { title: "Bugs", options: ["Bug-free utopia", "Minor annoyances", "Funny glitches", "Game-breaking madness", "More bugs than a rainforest", "I thought it was part of the game"] },
+        { title: "Difficulty", options: ["Hold-my-hand easy", "Just challenging enough", "Git Gud", "Unfair as Dark Souls", "Pure rage fuel", "Do I even have thumbs?"] },
+        { title: "Multiplayer", options: ["Best with friends", "Toxic community", "Great co-op", "Endless waiting for lobbies", "Full of hackers", "Smooth matchmaking"] },
+        { title: "PC Requirements", options: ["Runs on a toaster", "Low-end friendly", "Mid-tier required", "High specs recommended", "RTX or go home", "NASA's computer required"] }
     ];
 
     // Generate form elements for each category

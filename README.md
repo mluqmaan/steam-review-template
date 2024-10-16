@@ -38,7 +38,7 @@ Do you have some extra funny categories that could be added? Did we forget to ra
 
 ## Known Issues
 - The site might still be building. Chill, grab a coffee, maybe rate a game in your head while you wait.
-- No, this doesn’t actually post reviews to Steam. You’ll still have to **copy-paste** like it’s 1999.
+- No, this doesn’t actually post reviews to Steam. You’ll still have to **copy-paste** like it’s 1987.
 
 ## Special Thanks
 To all the gamers who have endured endless bugs, impossible gameplay, and the warm embrace of a potato-quality PC. This one’s for you.

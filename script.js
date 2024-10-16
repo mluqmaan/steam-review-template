@@ -42,15 +42,19 @@ document.addEventListener("DOMContentLoaded", () => {
         let reviewText = "";
 
         categories.forEach(category => {
-            const selectedOption = document.querySelector(`input[name="${category.title}"]:checked`);
-            if (selectedOption) {
-                reviewText += `---{ ${category.title} }---\n☑ ${selectedOption.value}\n\n`;
-            }
-        });
+            reviewText += `---{ ${category.title} }---\n`;
 
-        if (reviewText === "") {
-            reviewText = "No categories selected.";
-        }
+            category.options.forEach(option => {
+                const selectedOption = document.querySelector(`input[name="${category.title}"]:checked`);
+                if (selectedOption && selectedOption.value === option) {
+                    reviewText += `☑ ${option}\n`;
+                } else {
+                    reviewText += `☐ ${option}\n`;
+                }
+            });
+
+            reviewText += `\n`;
+        });
 
         reviewOutput.value = reviewText;
     });

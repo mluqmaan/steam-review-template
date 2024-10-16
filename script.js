@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const reviewContainer = document.getElementById("review-container");
     const generateButton = document.getElementById("generate-review");
     const reviewOutput = document.getElementById("review-output");
+    const copyButton = document.getElementById("copy-review");
 
     // Sample data for categories
     const categories = [
@@ -52,5 +53,12 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         reviewOutput.value = reviewText;
+    });
+
+    // Copy the generated review to the clipboard
+    copyButton.addEventListener("click", () => {
+        reviewOutput.select();
+        document.execCommand("copy");
+        alert("Review copied to clipboard!");
     });
 });
